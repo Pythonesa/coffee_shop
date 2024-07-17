@@ -15,6 +15,7 @@ class ProductFormView(FormView):
         form.save()
         return super().form_valid(form)
 
+
 class ProductsView(ListView):
     model = Product
     queryset = Product.objects.all()
