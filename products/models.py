@@ -7,7 +7,7 @@ class Product(models.Model):
     price = models.DecimalField(max_digits=10, decimal_places=2, verbose_name="Price")
     available = models.BooleanField(default=True, verbose_name="Available")
     photo = models.ImageField(
-        upload_to="photos", blank=True, null=True, verbose_name="Photo"
+        upload_to="", blank=True, null=True, verbose_name="Photo"
     )
 
     def __str__(self):
