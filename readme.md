@@ -5,5 +5,5 @@ This is a simple web application made with Django that allows you to manage a co
 ## Technologies used
 
 - Django
-- Tailwind
+- Tailwind (con Crispy Forms para los formularios)
 - PostgreSQL
