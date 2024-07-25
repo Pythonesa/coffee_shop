@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h1 class="text-3xl font-bold underline text-yellow-600 my-2">My Order</h1>
+
+<div class="py-2 px-4 space-y-4 text-yellow-400">
+    {{ order }}
+    <ul class="rounded-lg bg-yellow-800 p-2">
+        {% for item in order.orderitem_set.all %}
+            <li>{{ item }}</li>
+        {% empty %}
+            <li>No items in your order</li>
+        {% endfor %}
+    </ul>
+</div>
+
+{% endblock %}
